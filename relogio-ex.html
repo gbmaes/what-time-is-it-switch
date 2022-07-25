@@ -33,7 +33,6 @@
            var saudar = document.getElementById('saudar')
            var data = new Date()
            var hora = data.getHours()
-
            if(hora < 12){
                saudar.innerHTML = 'Good Morning!'
            } else if( hora <= 18){
@@ -41,12 +40,10 @@
            } else{
                saudar.innerHTML = 'Good Night!'
            }
-       
        function diaSemana(){
            var relogio = document.getElementById('relogio') 
            var data = new Date()
            var diaSemana = data.getDay()
-
            switch(diaSemana){ 
                  case 0:
                  relogio.innerHTML = 'Sunday'
